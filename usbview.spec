@@ -1,13 +1,18 @@
 Summary:	USB topology and device viewer
+Summary(pl):	Przegl±darka topologii i urz±dzeñ USB
 Name:		usbview
 Version:	1.0
 Release:	1
 License:	GPL v2+
-Group:		Applications/System
-Url:		http://www.kroah.com/linux-usb/
+Group:		X11/Applications/System
 Source0:	http://www.kroah.com/linux-usb/%{name}-%{version}.tar.gz
-BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+URL:		http://www.kroah.com/linux-usb/
+BuildRequires:	autoconf
+BuildRequires:	gtk+-devel >= 1.2.3
 Requires:	gtk+ >= 1.2.3
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+
+%define		_prefix		/usr/X11R6
 
 %description
 USBView is a GTK program that displays the topography of the devices
@@ -15,17 +20,25 @@ that are plugged into the USB bus on a Linux machine. It also displays
 information on each of the devices. This can be useful to determine if
 a device is working properly or not.
 
+%description -l pl
+USBView to program w GTK wy¶wietlaj±cy topografiê urz±dzeñ
+pod³±czonych do szyny USB w maszynie dzia³aj±cej pod Linuksem.
+Wy¶wietla tak¿e informacje o ka¿dym z urz±dzeñ. Mo¿e to byæ przydatne
+do stwierdzenia, czy dane urz±dzenie dzia³a poprawnie, czy nie.
+
 %prep
 %setup -q
 
 %build
-./configure
+%{__autoconf}
+%configure
 %{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install prefix=$RPM_BUILD_ROOT%{_prefix}
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
