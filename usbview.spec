@@ -9,6 +9,7 @@ Source0:	http://www.kroah.com/linux-usb/%{name}-%{version}.tar.gz
 # Source0-md5:	2ac1bdae03a858b965e895b211a75ad7
 URL:		http://www.kroah.com/linux-usb/
 BuildRequires:	autoconf
+BuildRequires:	automake
 BuildRequires:	gtk+-devel >= 1.2.3
 Requires:	gtk+ >= 1.2.3
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -29,7 +30,10 @@ do stwierdzenia, czy dane urz±dzenie dzia³a poprawnie, czy nie.
 %setup -q
 
 %build
+%{__aclocal}
 %{__autoconf}
+%{__autoheader}
+%{__automake}
 %configure
 %{__make}
 
