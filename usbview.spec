@@ -15,13 +15,13 @@ Requires:	gtk+ >= 1.2.3
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-USBView is a GTK program that displays the topography of the devices
+USBView is a GTK+ program that displays the topography of the devices
 that are plugged into the USB bus on a Linux machine. It also displays
 information on each of the devices. This can be useful to determine if
 a device is working properly or not.
 
 %description -l pl
-USBView to program w GTK wy¶wietlaj±cy topografiê urz±dzeñ
+USBView to program w GTK+ wy¶wietlaj±cy topografiê urz±dzeñ
 pod³±czonych do szyny USB w maszynie dzia³aj±cej pod Linuksem.
 Wy¶wietla tak¿e informacje o ka¿dym z urz±dzeñ. Mo¿e to byæ przydatne
 do stwierdzenia, czy dane urz±dzenie dzia³a poprawnie, czy nie.
