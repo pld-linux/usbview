@@ -2,9 +2,9 @@ Summary:	USB topology and device viewer
 Summary(pl):	Przegl±darka topologii i urz±dzeñ USB
 Name:		usbview
 Version:	1.0
-Release:	1
+Release:	2
 License:	GPL v2+
-Group:		X11/Applications/System
+Group:		Applications/System
 Source0:	http://www.kroah.com/linux-usb/%{name}-%{version}.tar.gz
 # Source0-md5:	2ac1bdae03a858b965e895b211a75ad7
 URL:		http://www.kroah.com/linux-usb/
