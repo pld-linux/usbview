@@ -12,7 +12,6 @@ BuildRequires:	gtk+-devel >= 1.2.3
 Requires:	gtk+ >= 1.2.3
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define		_prefix		/usr/X11R6
 
 %description
 USBView is a GTK program that displays the topography of the devices
