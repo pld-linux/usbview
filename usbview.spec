@@ -1,5 +1,5 @@
 Summary:	USB topology and device viewer
-Summary(pl):	Przegl±darka topologii i urz±dzeñ USB
+Summary(pl.UTF-8):   PrzeglÄ…darka topologii i urzÄ…dzeÅ„ USB
 Name:		usbview
 Version:	1.0
 Release:	2
@@ -20,11 +20,11 @@ that are plugged into the USB bus on a Linux machine. It also displays
 information on each of the devices. This can be useful to determine if
 a device is working properly or not.
 
-%description -l pl
-USBView to program w GTK+ wy¶wietlaj±cy topografiê urz±dzeñ
-pod³±czonych do szyny USB w maszynie dzia³aj±cej pod Linuksem.
-Wy¶wietla tak¿e informacje o ka¿dym z urz±dzeñ. Mo¿e to byæ przydatne
-do stwierdzenia, czy dane urz±dzenie dzia³a poprawnie, czy nie.
+%description -l pl.UTF-8
+USBView to program w GTK+ wyÅ›wietlajÄ…cy topografiÄ™ urzÄ…dzeÅ„
+podÅ‚Ä…czonych do szyny USB w maszynie dziaÅ‚ajÄ…cej pod Linuksem.
+WyÅ›wietla takÅ¼e informacje o kaÅ¼dym z urzÄ…dzeÅ„. MoÅ¼e to byÄ‡ przydatne
+do stwierdzenia, czy dane urzÄ…dzenie dziaÅ‚a poprawnie, czy nie.
 
 %prep
 %setup -q
