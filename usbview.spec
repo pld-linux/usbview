@@ -1,5 +1,5 @@
 Summary:	USB topology and device viewer
-Summary(pl.UTF-8):   Przeglądarka topologii i urządzeń USB
+Summary(pl.UTF-8):	Przeglądarka topologii i urządzeń USB
 Name:		usbview
 Version:	1.0
 Release:	2
