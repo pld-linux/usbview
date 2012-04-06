@@ -1,17 +1,16 @@
 Summary:	USB topology and device viewer
 Summary(pl.UTF-8):	Przeglądarka topologii i urządzeń USB
 Name:		usbview
-Version:	1.0
-Release:	2
+Version:	1.1
+Release:	1
 License:	GPL v2+
 Group:		Applications/System
-Source0:	http://www.kroah.com/linux-usb/%{name}-%{version}.tar.gz
-# Source0-md5:	2ac1bdae03a858b965e895b211a75ad7
-URL:		http://www.kroah.com/linux-usb/
+Source0:	http://www.kroah.com/linux/usb/%{name}-%{version}.tar.gz
+# Source0-md5:	8bf5e66351156356f3ad07454123affa
+URL:		http://www.kroah.com/linux/usb/
 BuildRequires:	autoconf
 BuildRequires:	automake
-BuildRequires:	gtk+-devel >= 1.2.3
-Requires:	gtk+ >= 1.2.3
+BuildRequires:	gtk+2-devel >= 2:2.0.5
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -30,16 +29,11 @@ do stwierdzenia, czy dane urządzenie działa poprawnie, czy nie.
 %setup -q
 
 %build
-%{__aclocal}
-%{__autoconf}
-%{__autoheader}
-%{__automake}
 %configure
 %{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
-
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
@@ -50,3 +44,4 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc ChangeLog README TODO
 %attr(755,root,root) %{_bindir}/usbview
+%{_mandir}/man8/usbview.8*
