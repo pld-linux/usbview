@@ -8,9 +8,8 @@ Group:		Applications/System
 Source0:	http://www.kroah.com/linux/usb/%{name}-%{version}.tar.gz
 # Source0-md5:	8bf5e66351156356f3ad07454123affa
 URL:		http://www.kroah.com/linux/usb/
-BuildRequires:	autoconf
-BuildRequires:	automake
 BuildRequires:	gtk+2-devel >= 2:2.0.5
+BuildRequires:	pkgconfig
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -42,6 +41,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc ChangeLog README TODO
+%doc AUTHORS ChangeLog README TODO
 %attr(755,root,root) %{_bindir}/usbview
 %{_mandir}/man8/usbview.8*
