@@ -1,14 +1,14 @@
 Summary:	USB topology and device viewer
 Summary(pl.UTF-8):	Przeglądarka topologii i urządzeń USB
 Name:		usbview
-Version:	1.1
+Version:	2.0
 Release:	1
 License:	GPL v2+
 Group:		Applications/System
 Source0:	http://www.kroah.com/linux/usb/%{name}-%{version}.tar.gz
-# Source0-md5:	8bf5e66351156356f3ad07454123affa
+# Source0-md5:	565f2e79f3924d14ab5b4d8aced557e5
 URL:		http://www.kroah.com/linux/usb/
-BuildRequires:	gtk+2-devel >= 2:2.0.5
+BuildRequires:	gtk+3-devel >= 3.0
 BuildRequires:	pkgconfig
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
